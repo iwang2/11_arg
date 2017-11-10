@@ -4,7 +4,7 @@
 #include <unistd.h>
 
 char ** parse_args(char * line){
-  char ** thing = malloc(sizeof(char *) * 5);
+  char ** thing = calloc(sizeof(char *), 6);
   char * s1 = line;
   int i = 0;
   while(s1){
